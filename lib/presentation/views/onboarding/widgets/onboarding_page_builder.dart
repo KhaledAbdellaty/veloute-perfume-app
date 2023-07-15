@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../../../business_logic/onboarding_cubit/onboarding_cubit.dart';
 import 'onboarding_body.dart';
 
-
 class OnBoardingPageBuilder extends StatelessWidget {
   const OnBoardingPageBuilder({
     super.key,
@@ -14,19 +13,16 @@ class OnBoardingPageBuilder extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      key: GlobalKey(),
-      child: PageView.builder(
-        physics: const NeverScrollableScrollPhysics(),
-        itemCount: cubit.onboardingContent.length,
-        controller: cubit.pageController,
-        onPageChanged: (index) {
-          cubit.changeIndex(index);
-        },
-        itemBuilder: (context, index) {
-          return const OnboardingBody();
-        },
-      ),
+    return PageView.builder(
+      physics: const NeverScrollableScrollPhysics(),
+      itemCount: cubit.onboardingContent.length,
+      controller: cubit.pageController,
+      onPageChanged: (index) {
+        cubit.changeIndex(index);
+      },
+      itemBuilder: (context, index) {
+        return const OnboardingBody();
+      },
     );
   }
 }

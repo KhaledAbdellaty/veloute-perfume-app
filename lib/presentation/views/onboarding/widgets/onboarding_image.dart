@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class OnboardingImage extends StatelessWidget {
   final String image;
-  const OnboardingImage({super.key,required this.image});
+  const OnboardingImage({super.key, required this.image});
 
   @override
   Widget build(BuildContext context) {
@@ -14,20 +14,12 @@ class OnboardingImage extends StatelessWidget {
         duration: const Duration(milliseconds: 200),
         child: child,
       ),
-      child: Align(
-        alignment: Alignment.topCenter,
-        child: Container(
-          width: MediaQuery.of(context).size.width,
-          height: MediaQuery.of(context).size.height / 2,
-          clipBehavior: Clip.antiAlias,
-          decoration: const BoxDecoration(
-              borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(25),
-                  bottomRight: Radius.circular(25))),
-          child: Image.asset(
-            image,
-            fit: BoxFit.cover,
-          ),
+      child: SizedBox(
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height,
+        child: Image.asset(
+          image,
+          fit: BoxFit.cover,
         ),
       ),
     );

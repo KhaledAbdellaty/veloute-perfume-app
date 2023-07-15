@@ -40,9 +40,9 @@ class ThemeManager {
       textTheme: TextTheme(
         // headline
         headlineLarge: TextStyle(
-            fontSize: FontsManager.s30,
+            fontSize: FontsManager.s24,
             color: ColorsManager.white,
-            fontWeight: FontWeight.w500),
+            fontWeight: FontWeight.w400),
         headlineMedium: TextStyle(
             fontSize: FontsManager.s30,
             color: ColorsManager.primary,

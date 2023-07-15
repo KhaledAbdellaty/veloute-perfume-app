@@ -17,17 +17,17 @@ class OnboardingCubit extends Cubit<OnboardingState> {
   final Map<String, Map<String, String>> onboardingContent = {
     ImagesManager.onboarding1: {
       'headline': StringsManager.onboarding1Headline,
-      'title': StringsManager.onboarding1Title,
+     
       'subtitle': StringsManager.onboarding1SubTitle,
     },
     ImagesManager.onboarding2: {
       'headline': StringsManager.onboarding2Headline,
-      'title': StringsManager.onboarding2Title,
+     
       'subtitle': StringsManager.onboarding2SubTitle,
     },
     ImagesManager.onboarding3: {
       'headline': StringsManager.onboarding3Headline,
-      'title': StringsManager.onboarding3Title,
+     
       'subtitle': StringsManager.onboarding3SubTitle,
     },
   };

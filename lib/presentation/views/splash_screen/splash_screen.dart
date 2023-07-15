@@ -9,6 +9,7 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       backgroundColor: ColorsManager.primary,
       body: BlocBuilder<SplashCubit, SplashState>(
@@ -20,4 +21,8 @@ class SplashScreen extends StatelessWidget {
       ),
     );
   }
+
+
+
+
 }

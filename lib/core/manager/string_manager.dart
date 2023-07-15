@@ -1,12 +1,10 @@
 class StringsManager {
-  static const onboarding1Headline = 'Welcome To Anime';
-  static const onboarding1Title = 'World!';
-  static const onboarding1SubTitle = 'Start your anime movie journey with us.';
+  static const onboarding1Headline = 'Welcome to the Veloute';
+  static const onboarding1SubTitle = 'Here you will find the best perfumes';
 
-  static const onboarding2Headline = 'Download And Enjoy';
-  static const onboarding2Title = 'Offline!';
+  static const onboarding2Headline = 'Explore Our Collection';
   static const onboarding2SubTitle =
-      'Download your favorite anime movie and enjoy them offline.';
+      'Discover Our Perfumes And Different Types';
 
   static const onboarding3Headline = 'Watch Anywhere,';
   static const onboarding3Title = 'Anytime!';

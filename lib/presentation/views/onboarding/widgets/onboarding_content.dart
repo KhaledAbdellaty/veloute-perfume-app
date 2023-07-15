@@ -1,24 +1,21 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:veloute_app/core/extenstions.dart';
 
 import '../../../../core/manager/images_manager.dart';
 
-
 class OnboardingContent extends StatelessWidget {
-  final String headline, title, subTitle;
+  final String headline, subTitle;
   const OnboardingContent({
     super.key,
     required this.headline,
-    required this.title,
     required this.subTitle,
   });
 
   @override
   Widget build(BuildContext context) {
     return Positioned(
-      bottom: 0,
+      bottom: 127.h,
       left: 0,
       right: 0,
       child: TweenAnimationBuilder(
@@ -37,12 +34,11 @@ class OnboardingContent extends StatelessWidget {
                 headline,
                 style: Theme.of(context).textTheme.headlineLarge,
               ),
-              Text(
-                title,
-                style: Theme.of(context).textTheme.headlineMedium,
-              ),
-              
-              25.h.emptyHeight,
+              // Text(
+              //   title,
+              //   style: Theme.of(context).textTheme.headlineMedium,
+              // ),
+              16.h.emptyHeight,
               Text(
                 subTitle,
                 style: Theme.of(context).textTheme.headlineSmall,

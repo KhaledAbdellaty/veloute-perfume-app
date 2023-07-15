@@ -9,7 +9,6 @@ import '../../../core/manager/string_manager.dart';
 import '../../../core/widgets/custom_button.dart';
 import '../../business_logic/onboarding_cubit/onboarding_cubit.dart';
 
-
 class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({super.key});
 
@@ -32,18 +31,27 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
       body: SafeArea(
         child: BlocBuilder<OnboardingCubit, OnboardingState>(
           builder: (context, state) {
-            return Column(
+            return Stack(
               children: [
                 OnBoardingPageBuilder(cubit: cubit),
-                DotsIndicator(cubit: cubit),
-                48.h.emptyHeight,
-                CustomButton(
-                  onPressed: cubit.currentIndex == 2
-                      ? () => cubit.navigate(context)
-                      : () => cubit.changeIndex(cubit.currentIndex++),
-                  switcherCondition: cubit.currentIndex < 2,
-                  firstChild: const Text(StringsManager.next),
-                  secondChild: const Text(StringsManager.getStarted),
+                Positioned(
+                  bottom: 0,
+                  left: 0,
+                  right: 0,
+                  child: Column(
+                    children: [
+                      DotsIndicator(cubit: cubit),
+                      31.h.emptyHeight,
+                      CustomButton(
+                        onPressed: cubit.currentIndex == 2
+                            ? () => cubit.navigate(context)
+                            : () => cubit.changeIndex(cubit.currentIndex++),
+                        switcherCondition: cubit.currentIndex < 2,
+                        firstChild: const Text(StringsManager.next),
+                        secondChild: const Text(StringsManager.getStarted),
+                      ),
+                    ],
+                  ),
                 ),
               ],
             );

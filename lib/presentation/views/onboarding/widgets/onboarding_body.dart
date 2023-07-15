@@ -21,11 +21,7 @@ class OnboardingBody extends StatelessWidget {
         .entries
         .singleWhere((element) => element.key == 'headline')
         .value;
-    final title = cubit.onboardingContent.values
-        .elementAt(cubit.currentIndex)
-        .entries
-        .singleWhere((element) => element.key == 'title')
-        .value;
+    
     final subTitle = cubit.onboardingContent.values
         .elementAt(cubit.currentIndex)
         .entries
@@ -34,19 +30,19 @@ class OnboardingBody extends StatelessWidget {
     return Stack(
       children: [
         OnboardingImage(image: image),
-        MiniButton(
-            topPosition: 11.h,
-            rightPosition: 24.w,
-            visible: cubit.currentIndex != 2,
-            onPressed: () => cubit.skipOnboarding(),
-            text: StringsManager.skip),
-        MiniButton(
-            topPosition: 11.h,
-            leftPosition: 24.w,
-            visible: cubit.currentIndex != 0,
-            onPressed: () => cubit.backOnboarding(),
-            text: StringsManager.back),
-        OnboardingContent(headline: headline, title: title, subTitle: subTitle)
+        // MiniButton(
+        //     topPosition: 11.h,
+        //     rightPosition: 24.w,
+        //     visible: cubit.currentIndex != 2,
+        //     onPressed: () => cubit.skipOnboarding(),
+        //     text: StringsManager.skip),
+        // MiniButton(
+        //     topPosition: 11.h,
+        //     leftPosition: 24.w,
+        //     visible: cubit.currentIndex != 0,
+        //     onPressed: () => cubit.backOnboarding(),
+        //     text: StringsManager.back),
+        OnboardingContent(headline: headline, subTitle: subTitle)
       ],
     );
   }
