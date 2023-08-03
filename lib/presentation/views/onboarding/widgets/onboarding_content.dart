@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:veloute_app/core/extenstions.dart';
 
-import '../../../../core/manager/images_manager.dart';
 
 class OnboardingContent extends StatelessWidget {
   final String headline, subTitle;
