@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/manager/fonts_manager.dart';
 
-
 class MiniButton extends StatelessWidget {
   final bool visible;
   final double? rightPosition;
@@ -32,19 +31,13 @@ class MiniButton extends StatelessWidget {
           top: topPosition,
           left: leftPosition,
           bottom: bottomPosition,
-          child: Container(
-            width: 72.w,
-            height: 31.h,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(13),
-                color: Colors.black.withOpacity(0.5)),
-            alignment: Alignment.center,
-            child: TextButton(
-              onPressed: onPressed,
-              child: Text(text,
-                  style: TextStyle(
-                      color: Colors.white, fontSize: FontsManager.s14)),
-            ),
+          child: TextButton(
+            onPressed: onPressed,
+            child: Text(text,
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: FontsManager.s16.sp,
+                    fontWeight: FontWeight.w500)),
           ),
         ));
   }

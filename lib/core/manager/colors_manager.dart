@@ -17,5 +17,7 @@ abstract class ColorsManager {
   static Color secondry = const Color(0xffE5D8EA);
   static Color white = const Color(0xffffffff);
   static Color background = const Color(0xff110317);
+  static Color grey = const Color(0xff9E9E9E);
+  static Color bottomBar = const Color(0xA194A566);
 
 }

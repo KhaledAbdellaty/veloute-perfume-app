@@ -1,15 +1,14 @@
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 class FontsManager {
-  static final double s10 = 10.sp;
-  static final double s12 = 12.sp;
+  static const double s10 = 10;
+  static const double s12 = 12;
 
-  static final double s14 = 14.sp;
+  static const double s14 = 14;
 
-  static final double s16 = 16.sp;
-  static final double s18 = 18.sp;
-  static final double s30 = 30.sp;
-  static final double s20 = 20.sp;
+  static const double s16 = 16;
+  static const double s18 = 18;
+  static const double s30 = 30;
+  static const double s20 = 20;
+  static const double s23 = 23;
 
-  static final double s24 = 24.sp;
+  static const double s24 = 24;
 }
