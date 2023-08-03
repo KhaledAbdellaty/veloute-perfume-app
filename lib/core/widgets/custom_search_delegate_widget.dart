@@ -12,26 +12,30 @@ class CustomSearchDelegateWidget extends SearchDelegate {
               query = '';
             }
           },
-          child: Text('Cancel'))
+          child: const Text('Cancel'))
     ];
   }
 
   @override
   Widget? buildLeading(BuildContext context) {
-    return SizedBox.shrink();
+    return const SizedBox.shrink();
   }
 
   @override
   Widget buildResults(BuildContext context) {
     return ListView.builder(
-      itemBuilder: (context, index) {},
+      itemBuilder: (context, index) {
+        return null;
+      },
     );
   }
 
   @override
   Widget buildSuggestions(BuildContext context) {
     return ListView.builder(
-      itemBuilder: (context, index) {},
+      itemBuilder: (context, index) {
+        return null;
+      },
     );
   }
 }

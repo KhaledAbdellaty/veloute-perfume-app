@@ -68,7 +68,7 @@ class CustomDetailsWidget extends StatelessWidget {
                   ),
                   Positioned(
                     bottom: 0,
-                    child: Container(
+                    child: SizedBox(
                       height: 360.h,
                       width: context.width,
                       // decoration: BoxDecoration(

@@ -84,5 +84,6 @@ class AppRouter {
           ),
         );
     }
+    return null;
   }
 }
