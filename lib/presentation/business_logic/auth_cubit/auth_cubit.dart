@@ -1,6 +1,5 @@
-import 'package:bloc/bloc.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter/material.dart';
 import 'package:veloute_app/core/manager/route_manager.dart';
 
 import '../../views/authentication/widgets/credential_input_field.dart';

@@ -67,7 +67,7 @@ class ProfileScreen extends StatelessWidget {
                           const SizedBox(
                             height: 30,
                           ),
-                          const Column(children: [
+                           Column(children: [
                             Row(
                               children: [
                                 Icon(Icons.account_circle, color: Colors.white),

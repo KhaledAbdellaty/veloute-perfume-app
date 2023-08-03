@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../../../core/manager/string_manager.dart';
 import '../../../business_logic/onboarding_cubit/onboarding_cubit.dart';
+import 'mini_button.dart';
 import 'onboarding_content.dart';
 import 'onboarding_image.dart';
 
