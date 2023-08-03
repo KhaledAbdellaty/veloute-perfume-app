@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:veloute_app/core/extenstions.dart';
 
-import '../../../../core/manager/images_manager.dart';
 
 class OnboardingContent extends StatelessWidget {
   final String headline, subTitle;
@@ -27,17 +26,15 @@ class OnboardingContent extends StatelessWidget {
           child: child,
         ),
         child: Padding(
-          padding: 24.w.psh,
+          padding: 21.w.psh,
           child: Column(
             children: [
               Text(
                 headline,
                 style: Theme.of(context).textTheme.headlineLarge,
+                textAlign: TextAlign.center,
               ),
-              // Text(
-              //   title,
-              //   style: Theme.of(context).textTheme.headlineMedium,
-              // ),
+        
               16.h.emptyHeight,
               Text(
                 subTitle,

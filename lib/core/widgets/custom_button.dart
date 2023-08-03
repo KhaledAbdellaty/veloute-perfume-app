@@ -36,9 +36,12 @@ class CustomButton extends StatelessWidget {
                 ? ColorsManager.white
                 : color ?? ColorsManager.primary),
             shape: outLineBorder
-                ? MaterialStatePropertyAll(RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(19),
-                    side: BorderSide(color: ColorsManager.primary)))
+                ? MaterialStatePropertyAll(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(19),
+                      side: BorderSide(color: ColorsManager.primary),
+                    ),
+                  )
                 : null),
         child: AnimatedSwitcher(
           duration: const Duration(milliseconds: 200),

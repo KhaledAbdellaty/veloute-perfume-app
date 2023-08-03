@@ -6,10 +6,10 @@ class StringsManager {
   static const onboarding2SubTitle =
       'Discover Our Perfumes And Different Types';
 
-  static const onboarding3Headline = 'Watch Anywhere,';
-  static const onboarding3Title = 'Anytime!';
+  static const onboarding3Headline = 'Exciting Perfume Exploration';
+
   static const onboarding3SubTitle =
-      'Enjoy your favorite movies wherever and whenever you want.';
+      'Discover The World Of Fragrances With Us.';
 
   static const next = 'Next';
   static const skip = 'Skip';
@@ -31,13 +31,17 @@ class StringsManager {
   static const alreadyHaveAccount = 'Already have an account?';
   static const send = 'Send';
 
-  static const userName = 'Username';
+  static const userName = 'User name';
   static const email = 'Email';
+  static const enterYourEmail = 'Enter your email';
+  static const enterFullName = 'Enter your full name';
+  static const enterPhoneNumber = 'Enter your phone number';
+  static const enterPassword = 'Enter password';
   static const password = 'Password';
+  static const phoneNumer = 'Phone number';
 
   static const otpVirificationTitle = 'OTP Verification';
-  static const otpVirificationSubTitle =
-      'please check your email see the verification code';
+  static const otpVirificationSubTitle = 'we’ve sent a code to xxxxxxxxx';
   static const resendCodeTo = 'Resend code to';
   static const verify = 'Verify';
 

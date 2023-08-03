@@ -30,18 +30,18 @@ class OnboardingBody extends StatelessWidget {
     return Stack(
       children: [
         OnboardingImage(image: image),
-        // MiniButton(
-        //     topPosition: 11.h,
-        //     rightPosition: 24.w,
-        //     visible: cubit.currentIndex != 2,
-        //     onPressed: () => cubit.skipOnboarding(),
-        //     text: StringsManager.skip),
-        // MiniButton(
-        //     topPosition: 11.h,
-        //     leftPosition: 24.w,
-        //     visible: cubit.currentIndex != 0,
-        //     onPressed: () => cubit.backOnboarding(),
-        //     text: StringsManager.back),
+        MiniButton(
+            topPosition: 11.h,
+            rightPosition: 24.w,
+            visible: cubit.currentIndex != 2,
+            onPressed: () => cubit.skipOnboarding(),
+            text: StringsManager.skip),
+        MiniButton(
+            topPosition: 11.h,
+            leftPosition: 24.w,
+            visible: cubit.currentIndex != 0,
+            onPressed: () => cubit.backOnboarding(),
+            text: StringsManager.back),
         OnboardingContent(headline: headline, subTitle: subTitle)
       ],
     );
